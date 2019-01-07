@@ -1,0 +1,16 @@
+node_modules/
+*.log
+npm-debug.log
+.logs/
+logs/
+sea-modules/
+*.swp
+.idea/
+.DS_Store
+.cache
+artifacts.json
+/.tea
+/.vscode
+/*.tgz
+package-lock.json
+/dist
