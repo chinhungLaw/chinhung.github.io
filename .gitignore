@@ -13,4 +13,3 @@ artifacts.json
 /.vscode
 /*.tgz
 package-lock.json
-/dist
