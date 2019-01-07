@@ -46,13 +46,28 @@ const getWebpackConfig = () => {
           test: /\.css$/,
           use: ExtractTextPlugin.extract({
             fallback: 'style-loader',
-            publicPath: isProduction ? process.env.CDN_URL || '../' : '/',
             use: [
               {
                 loader: 'css-loader',
                 options: {
                   minimize: isProduction,
                 },
+              },
+            ],
+          }),
+        },
+        {
+          test: /\.scss$/,
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: [
+              {
+                loader: 'css-loader',
+                options: {
+                  minimize: isProduction,
+                },
+              }, {
+                loader: "sass-loader",
               },
             ],
           }),
