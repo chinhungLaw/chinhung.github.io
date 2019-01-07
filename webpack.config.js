@@ -15,13 +15,14 @@ const getWebpackConfig = () => {
     devtool: isProduction ? undefined : 'cheap-module-source-map',
     devServer: {
       contentBase: output,
-      host: '127.0.0.1',
+      host: '30.103.73.93',
       port: '8000',
       allowedHosts: [
         '.aligames.com',
-        '127.0.0.1'
+        '127.0.0.1',
+        '30.103.73.93'
       ],
-      public: 'http://127.0.0.1:8000'
+      public: 'http://30.103.73.93:8000'
     },
     entry: {
       include: [

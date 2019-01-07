@@ -7,14 +7,14 @@
 <title>罗展雄简历_Chinhung Law Resume</title>
 <meta name="keywords" content="罗展雄 简历,Chinhung Law Resume">
 <meta name="description" content="罗展雄 简历,Chinhung Law Resume">
-<link href="./css/dev.11fe8b07.css" rel="stylesheet"></head>
+<link href="./css/dev.31bfe8ec.css" rel="stylesheet"></head>
 <body>
 <div class="site">
 <div class="container">
 <div class="sidebar">
 <div class="title">
 <img src="./img/logo.610caf9d.png" alt="logo.jpg" class="ig">
-<h1>罗展雄 简历</h1>
+<h1 class="click" title="点击下载" onclick="export1()">罗展雄 简历</h1>
 </div>
 <ul class="side-info">
 <li class="someRight">
@@ -25,7 +25,7 @@
 <span>个人信息:</span> 罗展雄 / 男 / 27岁 / 本科
 </dd>
 <dd>
-<span>工作经验:</span> 前端开发 5年
+<span>工作经验:</span> 前端开发(5年)
 </dd>
 <dd>
 <span>在线简历:</span>
@@ -157,7 +157,7 @@ Node.js
 <span class="tag">Hilo.js</span>
 </div>
 <div class="clearfix">
-<p>基于内部Hilo.js的小游戏</p>
+<p>基于Hilo.js开发的Canvas小游戏</p>
 <p><a target="_blank" href="https://chinhunglaw.github.io/resume/hilotest/">DEMO</a></p>
 </div>
 </li>
@@ -188,5 +188,7 @@ Node.js
 </li></ul></div>
 </div>
 </div>
-<script type="text/javascript" src="./js/dev.005c6a62.js"></script></body>
+<script type="text/javascript" src="./js/dev.df490ca8.js"></script></body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+<script>function export1(){var n=new jsPDF("p","pt","a4");n.addHTML(document.body,function(){n.save("web.pdf")})}</script>
 </html>
