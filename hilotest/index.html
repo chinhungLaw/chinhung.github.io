@@ -1,0 +1,58 @@
+<!doctype html>
+<head>
+<title>weekend-2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" href="images/icon.png"/>
+<link rel="apple-touch-startup-image" href="images/icon.png" />
+
+<style type="text/css">
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    tap-highlight-color: rgba(0,0,0,0);
+}
+body, div, canvas{
+    image-rendering: optimizeSpeed;
+    -webkit-image-rendering: optimizeSpeed;
+    -webkit-interpolation-mode: nearest-neighbor;
+}
+body{padding:0; margin:0; font-size:12px; background-color:#fff;}
+body, html{height:100%;}
+.box{width: 100%;height: 100%;overflow: hidden;position: relative;left: 0;top: 0}
+canvas{position:absolute;left: 0;top: 0;transform-origin: left top;}
+body{
+	background: url('');
+}
+</style>
+<script type="text/javascript" data-framework="true" src="//image.9game.cn/s/uae/g/2q/prod/public/common/js/zepto.ngp.min.last.js"></script>
+<script type="text/javascript" src="src/hilo-standalone.js"></script>
+<script type="text/javascript" src="src/game.js"></script>
+<script type="text/javascript" src="src/bgScene.js"></script>
+<script type="text/javascript" src="src/loading.js"></script>
+<script type="text/javascript" src="src/searchScene.js"></script>
+<script type="text/javascript" src="src/Asset.js"></script>
+<script type="text/javascript" src="src/readyScene.js"></script>
+<script type="text/javascript" src="src/girlScene.js"></script>
+<script type="text/javascript" src="src/gameScene.js"></script>
+
+<script type="text/javascript">
+	var img = new Image();
+	img.src = '';
+	img.onload = function (argument) {
+		document.getElementsByTagName('body')[0].append(img);
+	}
+</script>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+
+</html>

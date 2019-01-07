@@ -9,7 +9,7 @@ const UglifyJSPlugin = webpack.optimize.UglifyJsPlugin;
 
 const getWebpackConfig = () => {
   const isProduction = process.env.NODE_ENV === 'production';
-  const output = './dist';
+  const output = './';
 
   let config = {
     devtool: isProduction ? undefined : 'cheap-module-source-map',
