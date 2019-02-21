@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="site">
-   <div class="container">
+   <div class="container" id="print">
     <div class="sidebar">
      <div class="title">
        <div class="img"><img src="./images/logo.png" alt="logo.jpg" class="ig"></div> 
@@ -76,7 +76,7 @@
           <li><p>半年内产品经理助理经验，负责节日活动网页(PC端+移动端规划)的产品需求分析、页面原型设计、规划上线和数据总结分析等。</p></li>
         </ul>
        <ul class="exp">
-        <li><p>五年WEB前端经验，熟练使用HTML5、CSS3、JavaScript、Vue等前端技术，准确还原设计稿，并兼容PC端和移动端的前端页面开发和性能优化。</p></li>
+        <li><p>五年WEB前端经验，熟练使用HTML5、CSS3、JavaScript、Vue等前端技术，准确还原设计稿，并兼容PC端和移动端的前端页面开发和性能优化。曾担任前端小组长，负责需求安排，进度管理和人员分配等。</p></li>
        </ul>
        
        <ul class="exp">
@@ -116,7 +116,6 @@
           <p>当有新需求，先分析需求，再联合各合作方评审需求，联合设计方制定交互方案，联合后端制定接口方案，联合测试方调试页面，做出前端制作合理的技术方案，上线后进行性能优化。</p>
          </div>
         </li>
-        
        </ul>
        <!-- 项目经验 -->
        <h2 class="exp-title">项目经验</h2>
@@ -170,10 +169,13 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
     <script>
     function export1(){
-        
+        var contain = document.getElementById('print');
         var pdf = new jsPDF('p','pt','a4');
+        contain.className = 'container print';
+        window.scrollTo(0,0);
         pdf.addHTML(document.body,function() {
             pdf.save('罗展雄_产品经理简历.pdf');
+            contain.className = 'container';
         });
     }
     </script>

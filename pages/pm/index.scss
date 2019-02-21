@@ -182,7 +182,16 @@ body {
 	width: 1060px;
 	border-radius: 4px
 }
-
+.print {
+	.sidebar{
+		background: none;
+		color: #000 !important; 
+		a{
+			color: #000 !important; 
+		}
+	}
+	
+}
 .sidebar {
 	position: absolute;
 	top: 0;

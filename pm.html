@@ -7,10 +7,10 @@
 <title>罗展雄_产品经理简历_Chinhung Law Resume</title>
 <meta name="keywords" content="罗展雄_产品经理简历,Chinhung Law PM Resume">
 <meta name="description" content="罗展雄_产品经理简历,Chinhung Law PM Resume">
-<link href="./css/pm.31d8478d.css" rel="stylesheet"></head>
+<link href="./css/pm.f3ab9bef.css" rel="stylesheet"></head>
 <body>
 <div class="site">
-<div class="container">
+<div class="container" id="print">
 <div class="sidebar">
 <div class="title">
 <div class="img"><img src="./img/logo.610caf9d.png" alt="logo.jpg" class="ig"></div>
@@ -75,7 +75,7 @@
 <li><p>半年内产品经理助理经验，负责节日活动网页(PC端+移动端规划)的产品需求分析、页面原型设计、规划上线和数据总结分析等。</p></li>
 </ul>
 <ul class="exp">
-<li><p>五年WEB前端经验，熟练使用HTML5、CSS3、JavaScript、Vue等前端技术，准确还原设计稿，并兼容PC端和移动端的前端页面开发和性能优化。</p></li>
+<li><p>五年WEB前端经验，熟练使用HTML5、CSS3、JavaScript、Vue等前端技术，准确还原设计稿，并兼容PC端和移动端的前端页面开发和性能优化。曾担任前端小组长，负责需求安排，进度管理和人员分配等。</p></li>
 </ul>
 <ul class="exp">
 <li><p>五年Web前端开发经验想转型产品，思路清晰，逻辑分析能力强和注重用户体验。前端处于整个业务线的中层，是承上启下的作用，所以熟练沟通对接产品方，交互方&设计方，后端方&测试方。得益五年互联网产品前端开发经验，故熟悉互联网产品的整条开发流程，从原型设计、需求评审、产品稿设计、前后端开发与评审、测试验收和上线总结等流程。熟悉toB/C网页产品的开发流程和交互流程，了解用户习惯。</p></li>
@@ -161,5 +161,5 @@
 </div>
 <script type="text/javascript" src="./js/pm.8a9d221d.js"></script></body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
-<script>function export1(){var n=new jsPDF("p","pt","a4");n.addHTML(document.body,function(){n.save("罗展雄_产品经理简历.pdf")})}</script>
+<script>function export1(){var n=document.getElementById("print"),e=new jsPDF("p","pt","a4");n.className="container print",window.scrollTo(0,0),e.addHTML(document.body,function(){e.save("罗展雄_产品经理简历.pdf"),n.className="container"})}</script>
 </html>
