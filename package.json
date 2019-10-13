@@ -1,7 +1,7 @@
 {
   "name": "wdqk-news",
   "version": "0.0.5",
-  "description": "武动乾坤新闻页",
+  "description": "个人简历",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "start": "webpack-dev-server --open"
