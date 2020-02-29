@@ -156,7 +156,8 @@ td,th {
 }
 
 .clearfix {
-	zoom: 1
+	zoom: 1;
+	padding-top: 6px;
 }
 
 .clearfix:before,.clearfix:after {
@@ -440,7 +441,7 @@ h4 a,h5 a, .tag {
 .exp > li {
 	position: relative;
 	top: -5px;
-	margin: 20px 0 20px 20px
+	margin: 5px 0 5px 20px
 }
 
 .skill .exp {
