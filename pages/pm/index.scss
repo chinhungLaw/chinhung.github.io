@@ -199,7 +199,7 @@ body {
 	bottom: 0;
 	width: 300px;
 	padding: 15px 15px;
-	background: url(./images/bgc.png) repeat;
+	background: #6594bf;
 	color: #fff;
 	line-height: 1.5;
 	-webkit-box-sizing: border-box;
@@ -262,10 +262,11 @@ h3,h4 {
 
 .side-info dt {
 	font-size: 18px;
-	color: #9f3;
+	color: #10395f;
 	line-height: 40px;
 	padding-left: 14px;
 	position: relative;
+	font-weight: 700;
 	&::before{
 		content: '';
 		width: 10px;
@@ -273,7 +274,7 @@ h3,h4 {
 		position: absolute;
 		top: 14px;
 		left: 0;
-		background: #9f3;
+		background: #10395f;
 	}
 }
 
@@ -303,7 +304,7 @@ h3,h4 {
 .skill-bar-wrap {
 	height: 17px;
 	width: 150px;
-	background: #00796b;
+	background: #6594bf;
 	display: inline-block;
 	border-radius: 20px
 }
@@ -330,7 +331,7 @@ h3,h4 {
 }
 
 .main a {
-	color: #4db6ac
+	color: #6594bf
 }
 
 .main-info > li {
@@ -339,9 +340,9 @@ h3,h4 {
 
 .main-info dt {
 	font-size: 24px;
-	color: #00796b;
+	color: #6594bf;
 	line-height: 30px;
-	border-bottom: 1px solid #00796b;
+	border-bottom: 1px solid #6594bf;
 	margin: 0 0 15px -5px;
 	padding-left: 20px;
 	position: relative;
@@ -353,7 +354,7 @@ h3,h4 {
 		position: absolute;
 		top: 8px;
 		left: 0px;
-		background: #00796b;
+		background: #6594bf;
 	}
 }
 
@@ -404,20 +405,20 @@ h5 {
 }
 h4 a,h5 a, .tag {
 	font-size: 12px;
-	border: 1px solid #4db6ac;
+	border: 1px solid #6594bf;
 	padding: 0px 3px;
 	border-radius: 5px;
 	margin-left: 7px;
 	text-decoration: none;
 	vertical-align: middle;
-	color: #4db6ac;
+	color: #6594bf;
 }
 
 .circle {
 	height: 14px;
 	width: 14px;
 	border-radius: 100%;
-	background: #00796b;
+	background: #6594bf;
 	float: left;
 	position: absolute;
 	left: -28px;
@@ -425,7 +426,7 @@ h4 a,h5 a, .tag {
 }
 
 .exp {
-	border-left: 2px solid #00796b;
+	border-left: 2px solid #6594bf;
 	margin-left: 15px;
 }
 .exp2 {
