@@ -436,9 +436,12 @@ h4 a,h5 a, .tag {
 	font-size: 15px;
 	color: #333;
 	line-height: 22px;
-	margin-bottom: 3px
+	margin-bottom: 3px;
+	
 }
-
+.indent{
+	text-indent: 2em;
+}
 .exp > li {
 	position: relative;
 	top: -5px;
