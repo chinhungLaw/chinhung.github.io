@@ -157,7 +157,8 @@ td,th {
 
 .clearfix {
 	zoom: 1;
-	padding-top: 6px;
+	padding-top: 5px;
+	margin-bottom: 10px;
 }
 
 .clearfix:before,.clearfix:after {
@@ -440,7 +441,21 @@ h4 a,h5 a, .tag {
 	
 }
 .indent{
-	text-indent: 2em;
+	padding-left: 1em;
+	position: relative;
+	&::before{
+		content: '';
+		height: 2px;
+		width: 2px;
+		border-radius: 100%;
+		border: 2px solid #6594bf;
+		position: absolute;
+		left: 3px;
+		top: 8px
+	}
+}
+.circle2 {
+	
 }
 .exp > li {
 	position: relative;
