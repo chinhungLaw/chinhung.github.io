@@ -79,8 +79,9 @@ const getWebpackConfig = () => {
               options: {
                 limit: 1024 * 5,
                 fallback: 'file-loader',
+                publicPath: '/img/',
                 // img output path
-                name: `img/[name].[hash:8].[ext]`,
+                name: `[name].[hash:8].[ext]`,
               },
             },
           ],
