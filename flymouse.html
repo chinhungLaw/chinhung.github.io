@@ -4,13 +4,55 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <meta charset="UTF-8">
-<title>罗展雄_前端简历_Chinhung Law Resume</title>
-<meta name="keywords" content="罗展雄_前端简历,Chinhung Law Dev Resume">
-<meta name="description" content="罗展雄_前端简历,Chinhung Law Dev Resume">
-<link href="./css/index.css" rel="stylesheet"></head>
+<title>飞鼠遥控</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link href="./css/flymouse.f666d89b.css" rel="stylesheet"></head>
 <body>
-
-</body>
-<script type="text/javascript" src="./js/index.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+<div class="box1">
+<div class="mouse"></div>
+<div class="cBox c1 none">
+<div class="meng"><div class="mouse2"></div></div>
+<div class="listBox">
+<div class="list">
+<div class="btn hover">教学资料(选我)</div>
+<div class="btn">课件操作</div>
+<div class="btn">教学工具</div>
+<div class="btn back">退出</div>
+</div>
+</div>
+</div>
+<div class="cBox c2 none">
+<div class="meng"><div class="mouse2"></div></div>
+<div class="listBox">
+<div class="title">教学资料</div>
+<div class="list">
+<div class="btn hover">讲义</div>
+<div class="btn">课前</div>
+<div class="btn">课中(选我)</div>
+<div class="btn">课后</div>
+<div class="btn">资料</div>
+<div class="btn back">后退</div>
+</div>
+</div>
+</div>
+<div class="cBox c3 none">
+<div class="meng"><div class="mouse2"></div></div>
+<div class="listBox">
+<div class="title">课中</div>
+<div class="list">
+<div class="btn hover">案例1(选我)</div>
+<div class="btn">案例2</div>
+<div class="btn back">后退</div>
+</div>
+</div>
+</div>
+</div>
+<div class="box2 none">
+<div class="mouse"></div>
+<div class="word">可刷新页面重新体验</div>
+</div>
+<script type="text/javascript" src="./js/flymouse.f76216d4.js"></script></body>
+<script>var page=0,listTotal=[4,6,3],list1=0,list2=2,list3=0;$("body").bind("contextmenu",function(){return!1}),$("body").mousedown(function(e){if(0==page)return page=1,3==e.which&&$(".c1").fadeIn("100"),!1;if(0!=page&&3==e.which&&(page=0,$(".cBox").fadeOut("100")),1==page){if(1==e.which)(a=$(".c1").find(".list").children(".hover")).index()==list1&&(page=2,$(".c1").fadeOut("100"),$(".c2").fadeIn("100")),a.hasClass("back")&&(page=0,$(".cBox").fadeOut("100"));return!1}if(2==page){if(1==e.which)(a=$(".c2").find(".list").children(".hover")).index()==list2&&(page=3,$(".c2").fadeOut("100"),$(".c3").fadeIn("100")),a.hasClass("back")&&(page=1,$(".c1").fadeIn("100"),$(".c2").fadeOut("100"));return!1}if(3==page){var a;if(1==e.which)(a=$(".c3").find(".list").children(".hover")).index()==list3&&(page=0,$(".c3").fadeOut("100"),$(".box1").fadeOut("100"),$(".box2").fadeIn("100")),a.hasClass("back")&&(page=2,$(".c2").fadeIn("100"),$(".c3").fadeOut("100"));return!1}}),$(document).on("mousewheel DOMMouseScroll",function(e){if(0==page)return!1;var a=e.originalEvent.wheelDelta&&(0<e.originalEvent.wheelDelta?1:-1)||e.originalEvent.detail&&(0<e.originalEvent.detail?-1:1),i=$(".c"+page).find(".list"),n=(i.children(".hover").index()+a+listTotal[page-1])%listTotal[page-1];i.children().eq(n).addClass("hover").siblings().removeClass("hover")})</script>
 </html>
